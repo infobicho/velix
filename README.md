@@ -1,4 +1,4 @@
-# Velix v3.0.0
+# Velix v1.0.0
 
 Installation rapide:
 
