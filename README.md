@@ -38,7 +38,7 @@ python -m twine upload dist/*
  ╚████╔╝ ███████╗███████╗██║██╔╝ ██╗
   ╚═══╝  ╚══════╝╚══════╝╚═╝╚═╝  ╚═╝
 
-      Trouveur de pseudos v2.1.0
+      Trouveur de pseudos v3.0.0
       Fait par Bachir | github.com/bachir
 ```
 
@@ -58,10 +58,10 @@ python3 -m venv venv
 source venv/bin/activate
 
 # 3. Installe les dépendances
-pip install -r requirements.txt
+pip install -r requirements.txt 
 
 # 4. Lance !
-python3 velix.py
+velix
 ```
 
 ### 🪟 Windows
@@ -88,33 +88,8 @@ python velix.py
 
 ### Lancement simple (menu interactif)
 ```bash
-python3 velix.py
+velix
 ```
-
-### Toutes les commandes disponibles
-
-| Commande | Description |
-|---|---|
-| `python3 velix.py bachir` | Recherche directe |
-| `python3 velix.py bachir --silent` | Afficher seulement les comptes trouvés |
-| `python3 velix.py bachir --html` | Exporter un rapport HTML |
-| `python3 velix.py bachir --csv` | Exporter en CSV |
-| `python3 velix.py bachir --json` | Exporter en JSON |
-| `python3 velix.py bachir --browser` | Ouvrir le rapport dans le navigateur |
-| `python3 velix.py bachir --variantes` | Tester bachir_, bachir123, b4ch1r... |
-| `python3 velix.py bachir --fast` | Mode rapide (timeout 5s, 30 workers) |
-| `python3 velix.py bachir --show-http` | Afficher les codes HTTP |
-| `python3 velix.py bachir --no-color` | Désactiver les couleurs |
-| `python3 velix.py bachir --categorie 2` | Choisir une catégorie directement |
-| `python3 velix.py bachir --filter git` | Filtrer les sites par mot-clé |
-| `python3 velix.py bachir --exclude tiktok,reddit` | Exclure des sites |
-| `python3 velix.py bachir --output ./resultats` | Choisir le dossier de sauvegarde |
-| `python3 velix.py bachir --list-sites` | Voir la liste des sites disponibles |
-| `python3 velix.py --historique` | Voir l'historique des recherches |
-| `python3 velix.py --version` | Afficher la version |
-| `python3 velix.py bachir ali mehdi` | Rechercher plusieurs pseudos d'un coup |
-
----
 
 ## 📂 Catégories disponibles
 
