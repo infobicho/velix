@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "velix-osint"
+version = "3.0.0"
+description = "OSINT username finder for 480+ websites"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+  {name = "Bachir"}
+]
+dependencies = [
+  "colorama>=0.4.6",
+  "requests>=2.31.0",
+  "requests-futures>=1.0.1"
+]
+
+[project.scripts]
+velix = "velix.cli:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["velix*"]

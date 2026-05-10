@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+velix/__init__.py
+velix/cli.py
+velix/data.json
+velix_osint.egg-info/PKG-INFO
+velix_osint.egg-info/SOURCES.txt
+velix_osint.egg-info/dependency_links.txt
+velix_osint.egg-info/entry_points.txt
+velix_osint.egg-info/requires.txt
+velix_osint.egg-info/top_level.txt

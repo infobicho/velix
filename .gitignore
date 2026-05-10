@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+*_velix.txt
+*_velix.csv
+*_velix.json
+*_velix.html
+velix_historique.json

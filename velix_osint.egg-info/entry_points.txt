@@ -1,0 +1,2 @@
+[console_scripts]
+velix = velix.cli:main
