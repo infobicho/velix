@@ -38,9 +38,7 @@ TOP50 = [
     "Issuu","Sketchfab","SourceForge","Docker Hub","npm","PyPi","Mixcloud","Newgrounds",
 ]
 
-# ─────────────────────────────────────────────────────
-#  BANNIÈRE
-# ─────────────────────────────────────────────────────
+
 def get_banner():
     return (
         f"\n{Fore.CYAN}{Style.BRIGHT}"
@@ -58,7 +56,6 @@ def get_banner():
 
 # ─────────────────────────────────────────────────────
 #  CATÉGORIES
-#  ✅ FIX Bug 6 — noms corrigés : tumblr, GoodReads, threads
 # ─────────────────────────────────────────────────────
 CATEGORIES = {
     "1": {"nom": "🌐 Tous les sites", "sites": None},
@@ -150,8 +147,6 @@ CATEGORIES = {
 
 # ─────────────────────────────────────────────────────
 #  CHARGEMENT DATA.JSON
-#  ✅ FIX Bug 3 — Instagram probe direct (sans imginn)
-#  ✅ FIX Bug 3 — Twitter probe direct (sans nitter)
 # ─────────────────────────────────────────────────────
 def charger_sites(json_path=None):
     if json_path is None:
@@ -268,11 +263,6 @@ def couleur_vitesse(ms):
 
 # ─────────────────────────────────────────────────────
 #  RECHERCHE PRINCIPALE
-#  ✅ FIX Bug 1 — GET au lieu de HEAD (plus de faux 405)
-#  ✅ FIX Bug 2 — errorCode précis par site (pas >= 300)
-#  ✅ FIX Bug 4 — WAF détectable car on a le corps de la réponse
-#  ✅ FIX Bug 5 — retry supprimé (inutile avec futures)
-#  ✅ FIX Bug 7 — nb_illegal supprimé
 # ─────────────────────────────────────────────────────
 WAF_MSGS = [
     '.loading-spinner{visibility:hidden}body.no-js',
