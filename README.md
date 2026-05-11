@@ -50,7 +50,7 @@ python -m twine upload dist/*
 
 ```bash
 # 1. Clone le projet
-git clone https://github.com/bachir/velix.git
+git clone https://github.com/infobicho/velix.git
 cd velix
 
 # 2. Crée l'environnement virtuel
@@ -68,7 +68,7 @@ velix
 
 ```bash
 # 1. Clone le projet
-git clone https://github.com/bachir/velix.git
+git clone https://github.com/infobicho/velix.git
 cd velix
 
 # 2. Crée l'environnement virtuel
