@@ -163,14 +163,12 @@ def charger_sites(json_path=None):
     with open(json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    # ✅ FIX Bug 3 — Instagram : probe direct sur instagram.com
     if "Instagram" in data:
         data["Instagram"].pop("urlProbe", None)
         data["Instagram"]["url"]       = "https://www.instagram.com/{}/"
         data["Instagram"]["errorType"] = "status_code"
         data["Instagram"]["errorCode"] = [404]
 
-    # ✅ FIX Bug 3 — Twitter : probe direct sur x.com
     if "Twitter" in data:
         data["Twitter"].pop("urlProbe", None)
         data["Twitter"]["url"]       = "https://x.com/{}"
