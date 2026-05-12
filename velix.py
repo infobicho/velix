@@ -365,7 +365,7 @@ def rechercher(username, sites, silent=False, timeout=15, proxy=None,
                 status = "AVAILABLE" if any(e in txt for e in errors) else "CLAIMED"
 
             elif error_type == "status_code":
-                # ✅ FIX Bug 2 — errorCode précis du site, défaut [404] seulement
+                
                 codes = info.get("errorCode", [404])
                 if isinstance(codes, int):
                     codes = [codes]
