@@ -354,7 +354,7 @@ def rechercher(username, sites, silent=False, timeout=15, proxy=None,
             txt = ""
 
         try:
-            # ✅ FIX Bug 4 — WAF détectable car on a le corps maintenant
+            
             if any(w in txt for w in WAF_MSGS):
                 status = "WAF"
 
@@ -369,7 +369,7 @@ def rechercher(username, sites, silent=False, timeout=15, proxy=None,
                 codes = info.get("errorCode", [404])
                 if isinstance(codes, int):
                     codes = [codes]
-                # Seulement les codes d'erreur explicites → pas le ">= 300" qui était faux
+                
                 status = "AVAILABLE" if http_code in codes else "CLAIMED"
 
             elif error_type == "response_url":
