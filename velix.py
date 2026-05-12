@@ -307,7 +307,7 @@ def rechercher(username, sites, silent=False, timeout=15, proxy=None,
 
         url_probe      = interpolate(info.get("urlProbe", url), username)
         error_type     = info.get("errorType", "status_code")
-        # ✅ FIX Bug 1 : toujours GET (évite les faux 405 avec HEAD)
+       
         allow_redirect = (error_type != "response_url")
         proxies        = {"http": proxy, "https": proxy} if proxy else None
 
